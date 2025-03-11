@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body>{children}</body>
+      <body style={{zoom:0.8}}>{children}</body>
     </html>
   );
 }
