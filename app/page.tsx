@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { RefreshCcw, User } from 'lucide-react';
+import { Calendar, Clock, Hand, List, Play, RefreshCcw, Shield, User } from "lucide-react"
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
@@ -249,6 +249,112 @@ export default function Home() {
             <span dir="rtl">إظهار العروض</span>
           </Button>
         </form>
+      </div>
+
+      {/* Safe Way Section */}
+      <div className="bg-white py-10 px-4 text-center">
+        <h2 className="text-3xl font-bold text-blue-700 mb-10" dir="rtl">
+          طريقك آمن مع بي كير
+        </h2>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {/* Feature 1 */}
+          <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-3">
+              <Image src="/1.svg" height={50} width={50}  alt='q'className="w-6 h-6 text-blue-700" />
+            </div>
+            <p className="text-blue-700 font-medium text-sm" dir="rtl">
+              جدول تأمينك
+            </p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-3">
+              <div className="relative">
+              <Image src="/2.svg" height={50} width={50}  alt='q'className="w-6 h-6 text-blue-700" />
+
+               
+              </div>
+            </div>
+            <p className="text-blue-700 font-medium text-sm" dir="rtl">
+              أسعار أقل
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-3">
+            <Image src="/3.svg" height={50} width={50}  alt='q'className="w-6 h-6 text-blue-700" />
+
+            </div>
+            <p className="text-blue-700 font-medium text-sm" dir="rtl">
+              فضل تأمينك
+            </p>
+          </div>
+
+          {/* Feature 4 */}
+          <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-3">
+              <div className="relative">
+              <Image src="/4.svg" height={50} width={50}  alt='q'className="w-6 h-6 text-blue-700" />
+
+                <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">60</span>
+                </div>
+              </div>
+            </div>
+            <p className="text-blue-700 font-medium text-sm" dir="rtl">
+              تأمينك في دقيقة
+            </p>
+          </div>
+
+          {/* Feature 5 */}
+          <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-3">
+            <Image src="/5.svg" height={50} width={50}  alt='q'className="w-6 h-6 text-blue-700" />
+
+            </div>
+            <p className="text-blue-700 font-medium text-sm" dir="rtl">
+              مكان واحد
+            </p>
+          </div>
+
+          {/* Feature 6 */}
+          <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-3">
+            <Image src="/6.svg" height={50} width={50}  alt='q'className="w-6 h-6 text-blue-700" />
+            </div>
+            <p className="text-blue-700 font-medium text-sm" dir="rtl">
+              منافع تحميك
+            </p>
+          </div>
+
+          {/* Feature 7 */}
+          <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-3">
+            <Image src="/7.svg" height={50} width={50}  alt='q'className="w-6 h-6 text-blue-700" />
+
+            </div>
+            <p className="text-blue-700 font-medium text-sm" dir="rtl">
+              خصومات تضبطك
+            </p>
+          </div>
+
+          {/* Feature 8 */}
+          <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+            <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-3">
+              <div className="relative">
+              <Image src="/8.svg" height={50} width={50}  alt='q'className="w-6 h-6 text-blue-700" />
+
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
+              </div>
+            </div>
+            <p className="text-blue-700 font-medium text-sm" dir="rtl">
+              هب ريح
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Footer Buttons */}
